@@ -23,7 +23,7 @@ jobs:
 
     - name: Build Executable
       run: |
-        pyinstaller --noconsole --onefile --name="SecretSharingApp" app.py
+        pyinstaller --noconsole --onefile --name="SecretSharingApp" secret_key_vault.py
 
     - name: Upload EXE
       uses: actions/upload-artifact@v4
